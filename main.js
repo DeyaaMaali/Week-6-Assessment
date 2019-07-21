@@ -37,9 +37,26 @@ Ex: addKeyPowerIndex(arrOfObj2)
   {2: 4, c: 'duck'}
 ]   
 */
+var arrOfObj1 = [
+  { a: 12 },
+  { b: 5 },
+  { c: 16 },
+  { d: 4 },
+  { e: 3 }
+]
+var arrOfObj2 = [
+  { a: 'cat' },
+  { b: 'dog' },
+  { c: 'duck' }
+]
 
-function addKeyPowerIndex() {
-  // WRITE YOUR CODE UNDER THIS LINE  
+function addKeyPowerIndex(arr) {
+  // WRITE YOUR CODE UNDER THIS LINE
+  for (var i =0; i<arr.length; i++)
+  {
+    arr[i][i] = i*i;
+  }
+  return arr;
 
 }
 
