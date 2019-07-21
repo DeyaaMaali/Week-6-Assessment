@@ -124,8 +124,17 @@ Ex: nameLongerThan(arrOfObj4,6)
 ]
 */
 
-function nameLongerThan() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+var arrOfObj4 = [
+  { name: "alex" },
+  { name: "mercer"},
+  { name: "alice" },
+  { name: "zaheer"},
+  { name: "elizabeth"}
+]
+function nameLongerThan(arr, n) {
+  // WRITE YOUR CODE UNDER THIS LINE
+  var arr2 = arr.filter(elem => elem.name.length > n) 
+  return arr2;     
 }
 
 
