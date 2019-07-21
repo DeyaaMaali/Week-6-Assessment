@@ -61,7 +61,7 @@ function addKeyPowerIndex(arr) {
 }
 
 
-
+console.log("_____")
 
 
 
@@ -80,9 +80,14 @@ Ex: decreseBy(arrOfnum1,10)
 Ex: decreseBy(arrOfNum1,-6)
 => [83, 11, 39]
 */
-
-function decreseBy() {
-  // WRITE YOUR CODE UNDER THIS LINE 
+var arrOfNum1 = [77,5,33];
+function decreseBy(arr, n) {
+  // WRITE YOUR CODE UNDER THIS LINE
+  var arr2 =[]
+  arr.forEach(function(item, index){
+   arr2[index] =item-n;
+  })
+  return arr2;
 
 }
 
