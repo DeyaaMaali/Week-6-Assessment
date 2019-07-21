@@ -59,6 +59,17 @@ function addKeyPowerIndex(arr) {
   return arr;
 
 }
+//solution using forEach
+/*
+function addKeyPowerIndex2(arr) {
+  // WRITE YOUR CODE UNDER THIS LINE
+  arr.forEach(function(elem, index){
+    elem[index]=index*index;
+  })
+  return arr;
+
+}
+*/
 
 
 console.log("_____")
@@ -91,6 +102,14 @@ function decreseBy(arr, n) {
 
 }
 
+//solution using Map
+
+function decreseBy2(arr, n) {
+  // WRITE YOUR CODE UNDER THIS LINE
+  var arr2 = arr.map((item, index)=> item -n)
+  return arr2;
+
+}
 
 
 
