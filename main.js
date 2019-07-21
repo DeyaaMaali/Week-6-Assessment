@@ -163,9 +163,18 @@ Ex: avgLength(arrOfObj4,"name")
 Ex: avgLength(arrOfObj4,"food")
 => 6.8
 */
-
-function avgLength() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+var arrOfObj4 = [
+  { name: "alex", food: "fried chiken" },
+  { name: "mercer", food: "pizaa" },
+  { name: "alice", food: "burger" },
+  { name: "zaheer", food: "hot dog" },
+  { name: "elizabeth", food: "eggs" }
+]
+function avgLength(arr, str) {
+  // WRITE YOUR CODE UNDER THIS LINE
+  return arr.reduce(function(acc, elem, index){
+    return acc + elem[str].length;
+  }, 0) / arr.length;   
 
 }
 
